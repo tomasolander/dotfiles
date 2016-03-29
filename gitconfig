@@ -25,3 +25,6 @@
   autosquash = true
 [include]
   path = ~/.gitconfig.local
+[user]
+  email = tomasolander@gmail.com
+  name = Tomas Olander
