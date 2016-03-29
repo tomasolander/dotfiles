@@ -11,6 +11,7 @@ call plug#begin('~/.vim/bundle')
 Plug 'christoomey/vim-run-interactive'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'janko-m/vim-test'
+Plug 'mattn/emmet-vim'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'scrooloose/syntastic'
 Plug 'slim-template/vim-slim'
