@@ -78,6 +78,10 @@ endif
 set textwidth=80
 set colorcolumn=+1
 
+" Color scheme
+colorscheme molokai
+set cursorline
+
 " Numbers
 set number
 set numberwidth=5
