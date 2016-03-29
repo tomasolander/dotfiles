@@ -81,6 +81,7 @@ set colorcolumn=+1
 " Numbers
 set number
 set numberwidth=5
+set relativenumber
 
 " Tab completion
 " will insert tab at beginning of line,
@@ -135,6 +136,20 @@ set complete+=kspell
 
 " Always use vertical diffs
 set diffopt+=vertical
+
+" Persistent undo
+set undodir=~/.vim/undo
+set undofile
+
+" Use case sensitivity while searching only when capital letters are used
+set ignorecase
+set smartcase
+
+" s///g by default
+set gdefault
+
+" Always have five lines of context
+set scrolloff=5
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
