@@ -7,3 +7,6 @@ setopt extendedglob
 
 # Allow [ or ] whereever you want
 unsetopt nomatch
+
+# disable flow control (freezing the terminal)
+unsetopt flowcontrol
