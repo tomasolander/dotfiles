@@ -1,0 +1,13 @@
+[ui]
+username = Tomas Olander <tomasolander@gmail.com>
+
+[extensions]
+convert=
+color=
+strip=
+rebase=
+purge=
+
+[tortoisehg]
+authorcolor = True
+fullauthorname = True
