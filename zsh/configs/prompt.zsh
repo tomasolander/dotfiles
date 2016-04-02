@@ -1,6 +1,11 @@
 # modify the prompt to contain branch name if applicable
 git_branch() {
-  echo "$(git current-branch 2> /dev/null)"
+  branch=$(git current-branch 2> /dev/null)
+  if [ "$branch" = "master" ]; then
+    echo "±"
+  else
+    echo $branch
+  fi
 }
 
 hg_bookmark() {
@@ -8,7 +13,7 @@ hg_bookmark() {
   if [[ -n $repo ]]; then
     bookmark=$(cat $repo/bookmarks.current 2> /dev/null)
     if [[ -n $bookmark ]]; then
-      cat $bookmark
+      echo $bookmark
     else
       echo "☿"
     fi
