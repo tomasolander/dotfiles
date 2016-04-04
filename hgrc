@@ -11,3 +11,5 @@ purge=
 [tortoisehg]
 authorcolor = True
 fullauthorname = True
+
+%include ~/.hgrc.local
