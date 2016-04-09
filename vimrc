@@ -78,6 +78,9 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
+" More results!
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:10,results:10'
+
 " Make it obvious where 80 characters is
 set textwidth=80
 set colorcolumn=+1
