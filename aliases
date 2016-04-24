@@ -1,6 +1,7 @@
 # Unix
 alias aliases="vim ~/.aliases"
 alias d="dirs -v"
+alias dot="cd ~/dotfiles"
 alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias l="ls -lah"
 alias ll="ls -al"
@@ -25,6 +26,7 @@ alias hgc="hg commit"
 alias hgi="hg incoming"
 alias hgm="hg commit -m"
 alias hgo="hg outgoing"
+alias hgu="hg update"
 
 # Django
 alias djm="python manage.py migrate"
