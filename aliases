@@ -2,6 +2,7 @@
 alias aliases="vim ~/.aliases"
 alias d="dirs -v"
 alias dot="cd ~/dotfiles"
+alias dotsync="dot && gp && rcup && cd - && reload"
 alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias l="ls -lah"
 alias ll="ls -al"
