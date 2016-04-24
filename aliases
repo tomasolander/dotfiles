@@ -1,4 +1,5 @@
 # Unix
+alias aliases="vim ~/.aliases"
 alias d="dirs -v"
 alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias l="ls -lah"
@@ -6,8 +7,29 @@ alias ll="ls -al"
 alias ln="ln -v"
 alias ls="ls --color=tty"
 alias mkdir="mkdir -p"
+alias reload=". ~/.zshrc"
 alias e="$EDITOR"
 alias v="$VISUAL"
+
+# Git
+alias g="git status"
+alias gca="git commit -a"
+alias gcm="git commit -m"
+alias gd="git diff"
+alias gp="git push"
+
+# Mercurial
+alias h="hg status"
+alias hd="hg diff"
+alias hgc="hg commit"
+alias hgi="hg incoming"
+alias hgm="hg commit -m"
+alias hgo="hg outgoing"
+
+# Django
+alias djm="python manage.py migrate"
+alias djmm="python manage.py makemigrations"
+alias djs="python manage.py shell"
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
