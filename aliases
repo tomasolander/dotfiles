@@ -32,6 +32,7 @@ alias hgu="hg update"
 # Django
 alias djm="python manage.py migrate"
 alias djmm="python manage.py makemigrations"
+alias djr="python manage.py runserver 0.0.0.0:8000"
 alias djs="python manage.py shell"
 
 # Include custom aliases
