@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# Install a package and add it to requirements.txt.
+#
+# pipadd <package name> [requirements.txt]
+
+package="$1"
+requirementsfile="${2:-requirements.txt}"
+
+pip install $package
+pip freeze | grep "$package==" >> $requirementsfile
+sort $requirementsfile > $requirementsfile.sorted
+mv $requirementsfile.sorted $requirementsfile
