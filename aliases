@@ -32,10 +32,11 @@ alias ho="hg outgoing"
 alias hu="hg update"
 
 # Django
-alias djm="python manage.py migrate"
-alias djmm="python manage.py makemigrations"
-alias djr="python manage.py runserver 0.0.0.0:8000"
-alias djs="python manage.py shell"
+alias dj="python manage.py"
+alias djm="dj migrate"
+alias djmm="dj makemigrations"
+alias djr="dj runserver 0.0.0.0:8000"
+alias djs="dj shell"
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
