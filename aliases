@@ -37,6 +37,7 @@ alias djm="dj migrate"
 alias djmm="dj makemigrations"
 alias djr="dj runserver 0.0.0.0:8000"
 alias djs="dj shell"
+alias djt="dj test --keepdb"
 
 # Pip
 alias pipi="pip install -r"
