@@ -22,13 +22,14 @@ alias gp="git push"
 
 # Mercurial
 alias h="hg status"
+alias hb="hg bookmark"
 alias hd="hg diff"
-alias hgc="hg commit"
-alias hgs="echo 'Use h' && h"
-alias hgi="hg incoming"
-alias hgm="hg commit -m"
-alias hgo="hg outgoing"
-alias hgu="hg update"
+alias hc="hg commit"
+alias hcm="hg commit -m"
+alias hs="echo 'Use h' && h"
+alias hi="hg incoming"
+alias ho="hg outgoing"
+alias hu="hg update"
 
 # Django
 alias djm="python manage.py migrate"
