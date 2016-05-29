@@ -38,5 +38,10 @@ alias djmm="dj makemigrations"
 alias djr="dj runserver 0.0.0.0:8000"
 alias djs="dj shell"
 
+# Pip
+alias pipi="pip install -r"
+alias pipf="pip freeze"
+alias pipnuke="pip freeze | xargs pip uninstall -y"
+
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
