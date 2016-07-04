@@ -18,6 +18,7 @@ alias g="git status -u"
 alias gca="git commit -a"
 alias gcm="git commit -m"
 alias gd="git diff"
+alias gdc="git diff --cached"
 alias gp="git push"
 
 # Mercurial
