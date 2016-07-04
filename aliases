@@ -14,7 +14,7 @@ alias e="$EDITOR"
 alias v="$VISUAL"
 
 # Git
-alias g="git status"
+alias g="git status -u"
 alias gca="git commit -a"
 alias gcm="git commit -m"
 alias gd="git diff"
