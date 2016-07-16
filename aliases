@@ -40,6 +40,7 @@ alias djmm="dj makemigrations"
 alias djr="dj runserver 0.0.0.0:8000"
 alias djs="dj shell"
 alias djt="dj test --keepdb"
+alias djloadheroku="heroku run python manage.py dumpdata > /tmp/herokudumpdata.json && dj loaddata /tmp/herokudumpdata.json && rm /tmp/herokudumpdata.json"
 
 # Pip
 alias pipi="pip install -r"
