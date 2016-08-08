@@ -4,6 +4,7 @@ username = Tomas Olander <tomasolander@gmail.com>
 [extensions]
 convert=
 color=
+hggit=
 strip=
 rebase=
 purge=
