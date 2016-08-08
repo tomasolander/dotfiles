@@ -48,5 +48,9 @@ alias pipi="pip install -r"
 alias pipf="pip freeze"
 alias pipnuke="pip freeze | xargs pip uninstall -y"
 
+# Ember
+alias es="ember serve"
+alias ei="ember install"
+
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
