@@ -21,7 +21,7 @@ Install
 
 Clone onto my computer:
 
-    git clone https://github.com/toumaz/dotfiles.git
+    git clone https://github.com/tomasolander/dotfiles.git
 
 (And remember to [keep my fork
 updated](http://robots.thoughtbot.com/keeping-a-github-fork-updated)).
