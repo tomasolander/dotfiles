@@ -21,6 +21,8 @@ alias gcam="git commit -a -m"
 alias gd="git diff"
 alias gdc="git diff --cached"
 alias gp="git push"
+alias go="git outgoing"
+alias gi="git incoming"
 
 # Mercurial
 alias h="hg status"
