@@ -112,6 +112,9 @@ inoremap <S-Tab> <c-n>
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
 
+" EasyMotion
+map <Leader> <Plug>(easymotion-prefix)
+
 " Get off my lawn
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
