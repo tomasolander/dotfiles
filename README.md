@@ -12,6 +12,10 @@ this will suffice for now.
 Requirements
 ------------
 
+Install some dependencies on Ubuntu:
+
+    sudo apt install git zsh silversearcher-ag tmux
+
 Set zsh as my login shell:
 
     chsh -s $(which zsh)
