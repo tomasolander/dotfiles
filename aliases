@@ -47,6 +47,7 @@ alias djloadheroku="heroku run python manage.py dumpdata > /tmp/herokudumpdata.j
 
 # Pip
 alias pipi="pip install -r"
+alias pipir="pipi requirements.txt"
 alias pipf="pip freeze"
 alias pipnuke="pip freeze | xargs pip uninstall -y"
 
