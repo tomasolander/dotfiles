@@ -39,4 +39,11 @@ branch_prompt_info() {
 }
 setopt promptsubst
 
-PS1='${SSH_CONNECTION+"%{$fg[cyan]%}%n@%m "}%{$fg_bold[yellow]%}λ %{$fg_bold[blue]%}%c%{$reset_color%}$(branch_prompt_info) '
+virtualenv_prompt_info() {
+  name=$(virtualenv_name)
+  if [[ -n $name ]]; then
+    echo "%{$fg[green]%}🐍 %{$reset_color%}"
+  fi
+}
+
+PS1='${SSH_CONNECTION+"%{$fg[cyan]%}%n@%m "}$(virtualenv_prompt_info)%{$fg_bold[yellow]%}λ %{$fg_bold[blue]%}%c%{$reset_color%}$(branch_prompt_info) '
