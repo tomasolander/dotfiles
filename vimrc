@@ -61,7 +61,11 @@ set shiftround
 set expandtab
 
 " Display extra whitespace
-set list listchars=tab:»·,trail:·,nbsp:·
+if has("win32")
+  set list listchars=tab:��,trail:�,nbsp:�
+else
+  set list listchars=tab:»·,trail:·,nbsp:·
+endif
 
 " Use one space, not two, after punctuation.
 set nojoinspaces
@@ -98,6 +102,7 @@ set relativenumber
 " will insert tab at beginning of line,
 " will use completion if not at beginning
 set wildmode=list:longest,list:full
+
 function! InsertTabWrapper()
     let col = col('.') - 1
     if !col || getline('.')[col - 1] !~ '\k'
@@ -164,6 +169,12 @@ set gdefault
 
 " Always have five lines of context
 set scrolloff=5
+
+" Windows customizations
+if has("win32")
+  set guifont=Consolas:h10:cANSI:qDRAFT
+  set undodir=~/vimfiles/undo
+endif
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")

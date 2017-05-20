@@ -45,6 +45,22 @@ This command will create symlinks for config files in my home directory.
 
 I can safely run `rcup` multiple times to update.
 
+### Windows
+
+Since we don't have rcm on Windows, we'll just focus on what's important and get
+my configuration files installed in a rather patchwork manner.
+
+Run the following in a PowerShell with administrative rights:
+
+    git clone https://github.com/tomasolander/dotfiles.git $HOME\dotfiles
+    cmd /c mklink _vimrc "$HOME\dotfiles\vimrc"
+    cmd /c mklink .vimrc.bundles "$HOME\dotfiles\vimrc.bundles"
+    cmd /c mklink /D .vim "$HOME\dotfiles\vim"
+    mkdir $HOME\vimfiles\undo
+    mkdir $HOME\vimfiles\autoload
+    Invoke-WebRequest -Uri https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim -OutFile "$HOME\vimfiles\autoload\plug.vim"
+    gvim -u "$HOME\.vimrc.bundles" +PlugInstall +PlugClean! +qa
+
 zsh Configurations
 ------------------
 
