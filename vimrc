@@ -1,3 +1,7 @@
+" Always use English
+set langmenu=en_US.UTF-8
+language English_United States
+
 " Leader
 let mapleader = " "
 
