@@ -54,6 +54,7 @@ Run the following in a PowerShell with administrative rights:
 
     git clone https://github.com/tomasolander/dotfiles.git $HOME\dotfiles
     cmd /c mklink _vimrc "$HOME\dotfiles\vimrc"
+    cmd /c mklink _gvimrc "$HOME\dotfiles\gvimrc"
     cmd /c mklink .vimrc.bundles "$HOME\dotfiles\vimrc.bundles"
     cmd /c mklink /D .vim "$HOME\dotfiles\vim"
     mkdir $HOME\vimfiles\undo
