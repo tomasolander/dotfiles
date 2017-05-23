@@ -1,6 +1,8 @@
-" Always use English
-set langmenu=en_US.UTF-8
-language English_United States
+" Always use English on Windows
+if has("win32")
+  set langmenu=en_US.UTF-8
+  language English_United States
+endif
 
 " Leader
 let mapleader = " "
