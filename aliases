@@ -15,6 +15,7 @@ alias v="$VISUAL"
 
 # Git
 alias g="git status -u"
+alias gap="git add -p"
 alias gc="git commit"
 alias gca="git commit -a"
 alias gcm="git commit -m"
