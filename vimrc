@@ -124,7 +124,11 @@ inoremap <S-Tab> <c-n>
 nnoremap <leader><leader> <c-^>
 
 " EasyMotion
-map <Leader> <Plug>(easymotion-prefix)
+let g:EasyMotion_do_mapping = 0
+let g:EasyMotion_smartcase = 1
+nmap s <Plug>(easymotion-overwin-f)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
 
 " Get off my lawn
 nnoremap <Left> :echoe "Use h"<CR>
