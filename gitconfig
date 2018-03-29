@@ -25,10 +25,10 @@
   prune = true
 [rebase]
   autosquash = true
-[include]
-  path = ~/.gitconfig.local
 [user]
   email = tomasolander@gmail.com
   name = Tomas Olander
 [credential]
   helper = cache --timeout=3600
+[include]
+  path = ~/.gitconfig.local
