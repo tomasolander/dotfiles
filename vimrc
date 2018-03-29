@@ -76,8 +76,12 @@ endif
 " Use one space, not two, after punctuation.
 set nojoinspaces
 
+" Use ripgrep
+if executable('rg')
+  let g:ctrlp_user_command = 'rg --files -F -w %s'
+  let g:ctrlp_use_caching = 0
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
-if executable('ag')
+elseif executable('ag')
   " Use Ag over Grep
   set grepprg=ag\ --nogroup\ --nocolor
 
