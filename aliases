@@ -7,7 +7,6 @@ alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias l="ls -lah"
 alias ll="ls -al"
 alias ln="ln -v"
-alias ls="ls --color=tty"
 alias mkdir="mkdir -p"
 alias reload=". ~/.zshrc"
 alias e="$EDITOR"
