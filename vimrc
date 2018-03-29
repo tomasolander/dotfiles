@@ -199,6 +199,9 @@ set gdefault
 " Always have five lines of context
 set scrolloff=5
 
+" Enable mouse scroll
+set mouse=a
+
 " Windows customizations
 if has("win32")
   set guifont=Consolas:h10:cANSI:qDRAFT
