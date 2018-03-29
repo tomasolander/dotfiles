@@ -92,6 +92,18 @@ elseif executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
+" FZF
+fun! s:fzf_root()
+  let path = finddir(".git", expand("%:p:h").";")
+  return fnamemodify(substitute(path, ".git", "", ""), ":p:h")
+endfun
+
+" Override Ctrl+P with FZF
+if has("gui_running") == 0
+  let g:ctrlp_map = ''
+  nnoremap <silent> <c-p> :exe 'Files ' . <SID>fzf_root()<CR>
+endif
+
 " More results!
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:10,results:10'
 
