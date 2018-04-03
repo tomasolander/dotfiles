@@ -136,6 +136,11 @@ endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
+" Use shift+T for tag navigation.
+nnoremap <S-t> <C-]>
+" Or F12, because hey, Visual Studio habits die hard.
+nnoremap <F12> <C-]>
+
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
 
