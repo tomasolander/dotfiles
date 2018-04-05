@@ -141,6 +141,13 @@ nnoremap <S-t> <C-]>
 " Or F12, because hey, Visual Studio habits die hard.
 nnoremap <F12> <C-]>
 
+" Tagbar
+nnoremap <F8> :TagbarToggle<CR>
+let g:tagbar_autoclose = 1
+let g:tagbar_autofocus = 1
+let g:tagbar_autopreview = 1
+let g:tagbar_show_linenumbers = -1
+
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
 
