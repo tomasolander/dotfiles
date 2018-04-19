@@ -25,7 +25,6 @@ alias gp="git push"
 alias gpf="git push --force-with-lease"
 alias go="git outgoing"
 alias gi="git incoming"
-alias gpu="git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)"
 
 # Mercurial
 alias h="hg status"
