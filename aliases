@@ -29,6 +29,7 @@ alias gpf="git push --force-with-lease"
 alias go="git outgoing"
 alias gi="git incoming"
 alias github="hub browse"
+alias gsu="git submodule update --init --recursive"
 
 # Mercurial
 alias h="hg status"
