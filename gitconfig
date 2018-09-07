@@ -18,8 +18,9 @@
   show-merge = "!sh -c 'merge=$(git find-merge $0 $1) && [ -n \"$merge\" ] && git show $merge'"
   unpushed = log --branches --not --remotes --no-walk --decorate --oneline
   pain = "!git fetch -p && git merge origin/master"
+  feature = "!git checkout master && git pull && git submodule update --init --recursive && git checkout -b $1"
 [core]
-  excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore_global
   autocrlf = input
 [commit]
   template = ~/.gitmessage
