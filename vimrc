@@ -136,6 +136,9 @@ endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
+" C++ interface copy-pasting.
+vnoremap . :s/virtual \(.*\) = 0;/\1 override;/g<CR>
+
 " Use shift+T for tag navigation.
 nnoremap <S-t> <C-]>
 " Or F12, because hey, Visual Studio habits die hard.
