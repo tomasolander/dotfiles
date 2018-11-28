@@ -111,6 +111,38 @@ let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:10,results:10'
 set textwidth=80
 set colorcolumn=+1
 
+" Gutentags
+augroup MyGutentagsStatusLineRefresher
+  autocmd!
+  autocmd User GutentagsUpdating call lightline#update()
+  autocmd User GutentagsUpdated call lightline#update()
+augroup END
+
+function LightlineTags()
+  let l:state = gutentags#statusline()
+  if l:state =~ 'ctags'
+    return 'tags'
+  endif
+  return ''
+endfunction
+
+" Statusline/Lightline stuff
+let g:lightline = {
+  \ 'colorscheme': 'powerline',
+  \ 'active': {
+  \   'left': [ [ 'mode', 'paste' ],
+  \             [ 'readonly', 'filename', 'modified' ],
+  \             [ 'gitbranch', 'gutentags' ] ],
+  \   'right': [ [ 'lineinfo' ],
+  \              [ 'percent' ],
+  \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
+  \ },
+  \ 'component_function': {
+  \   'gitbranch': 'fugitive#head',
+  \   'gutentags': 'LightlineTags',
+  \ },
+  \ }
+
 " Color scheme
 colorscheme molokai
 set cursorline
