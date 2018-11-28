@@ -67,11 +67,7 @@ set shiftround
 set expandtab
 
 " Display extra whitespace
-if has("win32")
-  set list listchars=tab:��,trail:�,nbsp:�
-else
-  set list listchars=tab:»·,trail:·,nbsp:·
-endif
+set list listchars=tab:»·,trail:·,nbsp:·
 
 " Use one space, not two, after punctuation.
 set nojoinspaces
@@ -121,7 +117,7 @@ augroup END
 function LightlineTags()
   let l:state = gutentags#statusline()
   if l:state =~ 'ctags'
-    return 'tags'
+    return '☯'
   endif
   return ''
 endfunction
