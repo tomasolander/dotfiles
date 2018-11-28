@@ -147,6 +147,8 @@ set cursorline
 set number
 set numberwidth=5
 set relativenumber
+" This makes relative numbers work in Netrw
+let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
 
 " Tab completion
 " will insert tab at beginning of line,
