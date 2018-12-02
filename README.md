@@ -14,7 +14,7 @@ Requirements
 
 Install some dependencies on Ubuntu:
 
-    sudo apt install vim git zsh silversearcher-ag tmux
+    sudo apt install vim git zsh silversearcher-ag tmux exuberant-ctags
 
 Set zsh as my login shell:
 
