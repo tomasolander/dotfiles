@@ -94,6 +94,9 @@ fun! s:fzf_root()
   return fnamemodify(substitute(path, ".git", "", ""), ":p:h")
 endfun
 
+" FZF Rg shortcut
+nnoremap <C-f> :Rg 
+
 " Override Ctrl+P with FZF
 if has("gui_running") == 0
   let g:ctrlp_map = ''
