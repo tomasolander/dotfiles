@@ -100,6 +100,7 @@ endfun
 
 " FZF Rg shortcut
 nnoremap <C-f> :Rg 
+nnoremap <expr> <C-g> ':Rg '.expand("<cword>").'<CR>'
 
 " Override Ctrl+P with FZF
 if has("gui_running") == 0
