@@ -178,9 +178,8 @@ inoremap <S-Tab> <c-n>
 vnoremap . :s/virtual \(.*\) = 0;/\1 override;/g<CR>
 
 " Use shift+T for tag navigation.
-nnoremap <S-t> <C-]>
-" Or F12, because hey, Visual Studio habits die hard.
-nnoremap <F12> <C-]>
+nnoremap <S-t> :CtrlPtjump<cr>
+let g:ctrlp_tjump_only_silent = 1
 
 " Tagbar
 nnoremap <F8> :TagbarToggle<CR>
