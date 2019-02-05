@@ -194,6 +194,7 @@ nnoremap <leader><leader> <c-^>
 " EasyMotion
 let g:EasyMotion_do_mapping = 0
 let g:EasyMotion_smartcase = 1
+map <F10> <Plug>(easymotion-overwin-f)
 nmap <Leader>s <Plug>(easymotion-overwin-f)
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
