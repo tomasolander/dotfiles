@@ -149,7 +149,7 @@ let g:lightline = {
 
 " Color scheme
 colorscheme molokai
-set cursorline
+set nocursorline
 
 " Numbers
 set number
