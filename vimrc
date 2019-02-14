@@ -1,3 +1,5 @@
+set encoding=utf-8
+
 " Always use English on Windows
 if has("win32")
   set langmenu=en_US.UTF-8
