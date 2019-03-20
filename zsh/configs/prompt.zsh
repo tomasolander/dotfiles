@@ -46,4 +46,8 @@ virtualenv_prompt_info() {
   fi
 }
 
-PS1='${SSH_CONNECTION+"%{$fg[cyan]%}%n@%m "}$(virtualenv_prompt_info)%{$fg_bold[yellow]%}λ %{$fg_bold[blue]%}%c%{$reset_color%}$(branch_prompt_info) '
+icon() {
+  echo "λ"
+}
+
+PS1='${SSH_CONNECTION+"%{$fg[cyan]%}%n@%m "}$(virtualenv_prompt_info)%{$fg_bold[yellow]%}$(icon) %{$fg_bold[blue]%}%c%{$reset_color%}$(branch_prompt_info) '
