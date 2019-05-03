@@ -153,6 +153,16 @@ let g:lightline = {
 colorscheme molokai
 set nocursorline
 
+" Kitty workaround
+if $TERM == "xterm-kitty"
+  let &t_ut=''
+  " Set the terminal default background and foreground colors, thereby
+  " improving performance by not needing to set these colors on empty cells.
+  "hi Normal guifg=NONE guibg=NONE ctermfg=NONE ctermbg=NONE
+  "let &t_ti = &t_ti . "\033]10;#F8F8F2\007\033]11;#1B1D1E\007"
+  "let &t_te = &t_te . "\033]110\007\033]111\007""
+endif
+
 " Numbers
 set number
 set numberwidth=5
