@@ -12,6 +12,9 @@ alias reload=". ~/.zshrc"
 alias e="$EDITOR"
 alias v="$VISUAL"
 
+# Kitty
+alias icat="kitty +kitten icat"
+
 # Git
 alias g="git status -u"
 alias gap="git add -p"
@@ -66,6 +69,13 @@ alias pipnuke="pip freeze | xargs pip uninstall -y"
 # Ember
 alias es="ember serve"
 alias ei="ember install"
+
+# ADB
+alias adb-ip="adb shell ip -o -f inet addr show wlan0 | sed -En 's/.* inet (.*)\\/.*/\1/p'"
+alias adb-tether-ip="adb shell ip -o -f inet addr show rndis0 | sed -En 's/.* inet (.*)\\/.*/\1/p'"
+
+# Misc
+alias youtube="mpsyt"
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
