@@ -102,6 +102,8 @@ endfun
 
 " FZF Rg shortcut
 nnoremap <C-f> :Rg 
+nnoremap <expr> <M-f> ':Rg '.expand('%:t').'<CR>'
+nnoremap <expr> ƒ ':Rg '.expand('%:t').'<CR>'
 nnoremap <expr> <C-g> ':Rg '.expand("<cword>").'<CR>'
 
 " Override Ctrl+P with FZF
