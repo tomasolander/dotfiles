@@ -1,0 +1,8 @@
+#!/bin/bash
+ip=$(adb-ip)
+echo ">>> Enabling TCP/IP for $ip"
+echo ">>> Make sure you're on the same network, then disconnect USB cable"
+adb tcpip 5555
+echo ">>> Connecting to $ip"
+adb connect $ip
+echo ">>> Done, go back to USB using adb usb + adb disconnect"

@@ -1,0 +1,2 @@
+#!/bin/bash
+adb shell ip -o -f inet addr show wlan0 | sed -En "s/.* inet (.*)\\/.*/\1/p"
