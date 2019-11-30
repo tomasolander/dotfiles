@@ -39,6 +39,8 @@ _load_settings() {
 }
 _load_settings "$HOME/.zsh/configs"
 
+compdef _mkdir mcd
+
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
