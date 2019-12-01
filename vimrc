@@ -151,6 +151,8 @@ let g:lightline = {
   \ },
   \ }
 
+set tags^=./.git/tags
+
 " Color scheme
 colorscheme molokai
 set nocursorline
