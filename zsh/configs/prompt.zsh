@@ -42,7 +42,7 @@ setopt promptsubst
 virtualenv_prompt_info() {
   name=$(virtualenv_name)
   if [[ -n $name ]]; then
-    echo "%{$fg[green]%}🐍 %{$reset_color%}"
+    echo "%{$fg[green]%}py %{$reset_color%}"
   fi
 }
 
