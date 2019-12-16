@@ -77,6 +77,7 @@ alias adb-tether-ip="adb shell ip -o -f inet addr show rndis0 | sed -En 's/.* in
 
 # Misc
 alias youtube="mpsyt"
+alias serve="ifconfig | grep inet | grep netmask; python3 -m http.server"
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
