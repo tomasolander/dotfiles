@@ -190,6 +190,9 @@ endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
+" Easy duplication in visual mode
+vmap D y'>p
+
 " C++ interface copy-pasting.
 vnoremap . :s/virtual \(.*\) = 0;/\1 override;/g<CR>
 
