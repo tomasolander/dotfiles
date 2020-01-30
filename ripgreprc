@@ -1,1 +1,2 @@
---smart-case --ignore-file ~/.agignore
+--smart-case
+--ignore-file=~/.agignore
