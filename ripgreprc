@@ -1,2 +1,11 @@
 --smart-case
---ignore-file=~/.agignore
+--glob=!log
+--glob=!tmp
+--glob=!vendor
+--glob=!__pycache__/
+--glob=!bower_components/
+--glob=!node_modules/
+--glob=!*.pyc
+--glob=!*.dds
+--glob=!tags
+--glob=!tags.temp
