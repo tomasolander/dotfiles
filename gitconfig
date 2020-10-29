@@ -8,19 +8,21 @@
   aa = add --all
   ap = add --patch
   branches = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
+  children = "!bash -c 'c=${1:-HEAD}; set -- $(git rev-list --all --not \"$c\"^@ --children | grep $(git rev-parse \"$c\") ); shift; echo $1' -"
   ci = commit -v
   co = checkout
   pf = push --force-with-lease
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   st = status
   sl = log --oneline --decorate -20
-  sla = log --oneline --decorate --graph --all -20
+  sla = log --oneline --decorate --graph -20
   slap = log --oneline --decorate --graph --all
   incoming = "!git remote update -p; git log ..@{u}"
   outgoing = log @{u}..
   find-merge = "!sh -c 'commit=$0 && branch=${1:-HEAD} && (git rev-list $commit..$branch --ancestry-path | cat -n; git rev-list $commit..$branch --first-parent | cat -n) | sort -k2 -s | uniq -f1 -d | sort -n | tail -1 | cut -f2'"
   show-merge = "!sh -c 'merge=$(git find-merge $0 $1) && [ -n \"$merge\" ] && git show $merge'"
   unpushed = log --branches --not --remotes --no-walk --decorate --oneline
-  pain = "!git fetch -p && git merge origin/master"
+  pain = "!git fetch -p --tags -f && git merge origin/master"
   feature = "!git checkout master && git pull && git submodule update --init --recursive && git checkout -b $1"
 [core]
   excludesfile = ~/.gitignore_global
