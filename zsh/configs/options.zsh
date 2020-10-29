@@ -10,3 +10,6 @@ unsetopt nomatch
 
 # disable flow control (freezing the terminal)
 unsetopt flowcontrol
+
+# Don't quit on CTRL+D
+setopt ignore_eof
