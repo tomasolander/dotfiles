@@ -14,9 +14,7 @@ Requirements
 
 Install some dependencies on Ubuntu:
 
-    sudo apt install vim git zsh gcc tmux exuberant-ctags curl -y
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-    brew install ripgrep
+    sudo apt install vim git zsh gcc tmux exuberant-ctags curl ripgrep -y
 
 Set zsh as my login shell:
 
