@@ -271,6 +271,9 @@ set scrolloff=5
 " Enable mouse scroll
 set mouse=a
 
+" Make background transparent
+hi Normal guibg=NONE ctermbg=NONE
+
 " Windows customizations
 if has("win32")
   set guifont=Consolas:h10:cANSI:qDRAFT
