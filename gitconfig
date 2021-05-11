@@ -40,3 +40,5 @@
   helper = cache --timeout=3600
 [include]
   path = ~/.gitconfig.local
+[hub]
+	protocol = ssh
