@@ -1,0 +1,9 @@
+#!/bin/bash
+if ! [ -x "$(command -v adb devices)" ]; then
+  echo 'Error: adb not found.' >&2
+  exit 1
+fi
+
+apk="$1"
+adb start-server
+adb devices | tail -n +2 | cut -sf 1 | xargs -I {} adb -s {} install -r $apk

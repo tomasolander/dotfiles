@@ -1,0 +1,9 @@
+#!/bin/bash
+if ! [ -x "$(command -v ideviceinstaller)" ]; then
+  echo 'Warning: ideviceinstaller is not installed.' >&2
+  echo 'You should install it; check the README.' >&2
+  exit 1
+fi
+
+ipa="$1"
+ideviceinstaller -i $ipa
