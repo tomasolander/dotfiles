@@ -252,7 +252,11 @@ set spellfile=$HOME/.vim-spell-en.utf-8.add
 set complete+=kspell
 
 " Always use vertical diffs
-set diffopt+=vertical
+" See https://github.com/thoughtbot/dotfiles/issues/655#issuecomment-605019271
+if &diff
+    set diffopt-=internal
+    set diffopt+=vertical
+endif
 
 " Persistent undo
 set undodir=~/.vim/undo
